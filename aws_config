@@ -1,0 +1,19 @@
+#!/bin/bash
+# Settings for AWS
+
+# Amazon account settings
+export EC2_CERT=~/amazon/certs/cert-XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX.pem
+export EC2_PRIVATE_KEY=~/amazon/certs/pk-XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX.pem
+export AWS_CREDENTIAL_FILE=~/amazon/credential-file
+
+# Amazon application paths
+export AWS_RDS_HOME=~/amazon/rdb
+
+# Java settings
+export JAVA_HOME=/usr/lib/jvm/java-1.6.0-sun
+
+# Global settings
+export PATH=$PATH:$AWS_RDS_HOME/bin
+
+# Amazon region
+export EC2_REGION="us-west-1"
